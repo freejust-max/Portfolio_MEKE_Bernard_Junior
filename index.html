@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MEKE Bernard Junior — Portfolio</title>
+  <meta name="description" content="MEKE Bernard Junior — QHSE & Develloppement Web (QSRI). Digitalisation QHSE, élaboration documents HSE, tableaux de bord, audits, ISO,." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="style.css">
+  <script href="script.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <!-- HEADER -->
+    <header role="banner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">MBJ</div>
+        <div>
+          <div style="font-weight:800">MEKE Bernard Junior</div>
+          <div class="small-muted">Ingénieur QHSE (QSRI) — Fondateur QHSELAB</div>
+        </div>
+      </div>
+
+      <nav role="navigation" aria-label="navigation principale">
+        <button class="burger" id="burger" aria-label="Ouvrir le menu">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="#apropos">À propos</a>
+          <a href="#projets">Projets</a>
+          <a href="#competences">Compétences</a>
+          <a href="#experience">Expériences</a>
+          <a href="#formations">Formations</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" id="downloadCv" href="documents/CV_Meke_Bernard_junior.pdf" target="_blank" rel="noopener">Télécharger CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN GRID -->
+    <main class="grid cols" role="main" aria-labelledby="mainTitle">
+      <!-- SIDEBAR -->
+      <aside>
+        <section class="card" aria-labelledby="profileTitle">
+          <div class="hero">
+            <div class="avatar" id="avatarWrap"><img id="profilePhoto" alt="Photo de MEKE Bernard" src="image/ma_photo.jpg"></div>
+            <div>
+              <h1 id="profileTitle" class="title">MEKE Bernard Junior</h1>
+              <div class="subtitle">Ingénieur QHSE (QSRI) — Digitalisation & Transformation QHSE</div>
+              <div class="actions">
+                <button class="btn-primary" id="contactBtn">Contact</button>
+                <label for="photoInput" class="btn">Mettre une photo</label>
+                <input id="photoInput" type="file" accept="image/*" style="display:none">
+              </div>
+              <div class="small-muted" style="margin-top:10px">QHSELAB — fondateur · panéliste · formateur</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="quickContact">
+          <h3 id="quickContact" style="margin:0 0 8px 0">Contact rapide</h3>
+          <div class="small-muted">Téléphone</div>
+          <div style="font-weight:700;margin-bottom:6px">
+            <a href="tel:+237659183245">+237659183245 &</a>
+            <a href="tel: +237 655149200">+237655149200</a>
+          </div>
+          <div class="small-muted">Email</div>
+          <div style="font-weight:700"><a href="mailto:mekebernardjunior932@gmail.com">mekebernardjunior932@gmail.com</a></div>
+          <div style="margin-top:10px" class="small-muted">Localisation</div>
+          <div style="font-weight:700">Yaoundé / Douala, Cameroun</div>
+        </section>
+
+        <section class="card" id="competences" aria-labelledby="skillsTitle">
+          <h3 id="skillsTitle" style="margin:0 0 8px 0">Compétences clés</h3>
+          <div class="skills-grid">
+            <div class="skill-tile"><h4>QHSE & Conformité</h4><p class="muted">DUERP, PGES, ISO 9001/14001/45001, audits internes</p></div>
+            <div class="skill-tile"><h4>Analyse & méthodes</h4><p class="muted">AMDEC, HAZOP, SWOT, PDCA, ISHIKAWA, PARETO</p></div>
+            <div class="skill-tile"><h4>Digitalisation</h4><p class="muted">Power BI, Excel avancé, rapports automatisés</p></div>
+            <div class="skill-tile"><h4>Technique & terrain</h4><p class="muted">Plans d’évacuation, gestion EPI, check-lists</p></div>
+            <div class="skill-tile"><h4>Informatique</h4><p class="muted">Python, JavaScript, HTML/CSS — Développement web </p></div>
+            <div class="skill-tile"><h4>Outils</h4><p class="muted">ArcGIS, AutoCAD (bases), Global Mapper, Inkscape</p></div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="languages">
+          <h3 id="languages" style="margin:0 0 8px 0">Langues & intérêts</h3>
+          <div class="small-muted">Langues</div>
+          <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+            <span class="btn" style="background:#fff;border:1px solid rgba(16,24,40,0.04);color:var(--accent-2)">Français — Courant</span>
+            <span class="btn" style="background:#fff;border:1px solid rgba(16,24,40,0.04);color:var(--accent-2)">Anglais — Intermédiaire</span>
+          </div>
+          <div style="margin-top:10px" class="small-muted">Loisirs</div>
+          <ul style="margin-top:8px;color:var(--muted)"><li>Tourisme</li><li>Lecture</li><li>Football</li></ul>
+        </section>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <section>
+
+        <section id="apropos" class="card" aria-labelledby="aproposTitle">
+          <h2 id="aproposTitle" style="margin:0 0 10px 0">À propos</h2>
+          <p style="margin-top:0">
+            <strong>Ingénieur QHSE (QSRI) passionné par l’innovation</strong>, j’accompagne entreprises et organisations dans la mise en place de systèmes de management efficaces, de l’évaluation des risques à la conformité ISO. <br> 
+            Ma particularité : je combine expertise QHSE et <strong>digitalisation</strong>. J’automatise documents, tableaux de bord et rapports interactifs, afin de transformer la gestion HSE en outils simples, pratiques et performants. <br>
+            En parallèle, je développe mes compétences en <strong>développement web</strong> (HTML, CSS, JavaScript, Python) que j’intègre à mes projets QHSE pour créer des solutions sur-mesure : applications, check-lists interactives et plateformes digitales adaptées au terrain.
+          </p>
+          </p>
+          <div style="margin-top:12px" class="small-muted">
+            🎯 Mon objectif : un QHSE moderne, accessible et durable — où la rigueur réglementaire rencontre l’efficacité numérique.
+          </div>
+        </section>
+
+        <section id="projets" class="card" aria-labelledby="projectsTitle">
+          <h2 id="projectsTitle" style="margin:0 0 10px 0">Projets & réalisations</h2>
+
+          <div class="projects-grid" role="list">
+            <article class="project" role="listitem">
+              <div class="thumb">DUERP — Multi-sites</div>
+              <div class="body">
+                <h4>Élaboration DUERP</h4>
+                <p class="muted">Inventaire risques, mesures, responsabilités, périodicité.</p>
+                <p style="margin-top:8px"><a href="DUERP_Usine2023.pdf" target="_blank" rel="noopener">📥 DUERP_Usine2023.pdf</a></p>
+              </div>
+            </article>
+
+            <article class="project" role="listitem">
+              <div class="thumb">Tableaux KPI</div>
+              <div class="body">
+                <h4>Tableaux de bord HSE</h4>
+                <p class="muted">Dashboards Power BI / Excel automatisés.</p>
+                <p style="margin-top:8px"><a href="tb/TB 9001.xlsx" target="_blank" rel="noopener">📥 ISO 9001 .xls</a> <br>
+                  <a href="tb/TB 22001.xlsx" target="_blank" rel="noopener">📥 ISO 22001 .xls</a> <br>
+                  <a href="tb/TB 45001.xlsx" target="_blank" rel="noopener">📥 ISO 45001 .xls</a> <br>
+                  <a href="tb/TB 50001.xlsx" target="_blank" rel="noopener">📥 ISO 50001 .xls</a> <br>
+                  <a href="tb/TB 14001.xlsx" target="_blank" rel="noopener">📥 ISO 14001 .xls</a> <br>
+                  <a href="tb/Non_Conformites_MultiSite.xlsx" target="_blank" rel="noopener">📥 Non conformité multisiste</a> <br>
+                  <a href="tb/Modele_Tableau_de_Bord_QHSE.xlsx" target="_blank" rel="noopener">📥 Tableau_de_Bord_QHSE</a>
+                </p>
+              </div>
+            </article>
+
+            <article class="project" role="listitem">
+              <div class="thumb">Rapport auto</div>
+              <div class="body">
+                <h4>Rapports automatisés QHSELAB</h4>
+                <p class="muted">Templates & scripts pour exports PDF/Excel.</p>
+                <p style="margin-top:8px"><a href="rapport/modele_rapport_mensuel_QHSE.xlsx" target="_blank" rel="noopener">📥 Modele_rapport_mensuel_QHSE</a></p>
+              </div>
+            </article>
+
+            <article class="project" role="listitem">
+              <div class="thumb">Plans d'urgence</div>
+              <div class="body">
+                <h4>Plans d’évacuation digitalisés</h4>
+                <p class="muted">Plans imprimables & interactifs, procédures incendie.</p>
+                <p style="margin-top:8px"><a href="plan/plan 1.png" target="_blank" rel="noopener">📥 Télécharger</a></p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="card" aria-labelledby="expTitle">
+          <h2 id="expTitle" style="margin:0 0 10px 0">Expériences</h2>
+          <div class="timeline" role="list">
+            <div class="timeline-item" role="listitem">
+              <h4>Fondateur & Responsable — QHSELAB</h4>
+              <div class="role muted">Mars 2025 — présent</div>
+              <div class="small-muted" style="margin-top:8px">Création et animation d’une communauté (+200 membres), webinaires, développement d'outils QHSE digitaux.</div>
+            </div>
+
+            <div class="timeline-item" role="listitem">
+              <h4>Adjoint Responsable HSE — CFHEC (Autoroute Yaoundé–Douala)</h4>
+              <div class="role muted">Mars 2023 — Mars 2024</div>
+              <div class="small-muted" style="margin-top:8px">Mise en œuvre du PGES, sensibilisation, suivi des sites et rapports environnementaux.</div>
+            </div>
+
+            <div class="timeline-item" role="listitem">
+              <h4>Stagiaire — Port Autonome de Douala</h4>
+              <div class="role muted">Avril — Juillet 2024</div>
+              <div class="small-muted" style="margin-top:8px">Participation aux audits internes et contribution à la recertification ISO 9001.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="details-grid">
+            <div>
+              <h3 style="margin:0 0 10px 0" id="formations">Formations</h3>
+              <ul class="muted small" style="padding-left:18px">
+                <li>2024 — Ingénieur de Conception en QSRI (ESIAC)</li>
+                <li>2022 — Ingénieur des Travaux en QSRI (ESIAC)</li>
+                <li>2019 — Licence en Géologie (Université de Yaoundé I)</li>
+                <li>2016 — Baccalauréat Série D</li>
+              </ul>
+            </div>
+            <div>
+              <h3 style="margin:0 0 10px 0">Certifications clés</h3>
+              <ul class="muted small" style="padding-left:18px">
+                <li>2025 — Microsoft Project avancé — Cornerstone</li>
+                <li>2025 — Fondamentaux de l’action humanitaire — Cornerstone</li>
+                <li>2024 — Développement durable — IFDD</li>
+                <li>2023 — Risk Management — FACINOV SARL</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT: nouvelle disposition (deux colonnes sur desktop, pile sur mobile) -->
+        <section id="contact" class="card" aria-labelledby="contactTitle">
+          <h2 id="contactTitle" style="margin:0 0 10px 0">Contact</h2>
+
+          <div class="contact-grid">
+            <!-- LEFT: contact infos -->
+            <div class="contact-info">
+              <div class="contact-card">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                  <div>
+                    <h3 style="margin:0">Restons en contact</h3>
+                    <div class="small-muted" style="margin-top:6px">Disponible pour missions QHSE, audits, formations et digitalisation.</div>
+                  </div>
+                  <div style="text-align:right">
+                    <button class="btn" id="cvDownloadSide">Télécharger CV</button>
+                  </div>
+                </div>
+
+                <div style="margin-top:12px">
+                  <div class="contact-row">
+                    <div class="icon">📞</div>
+                    <div>
+                      <div class="small-muted">Téléphone</div>
+                      <div style="font-weight:700"><a href="tel:+237659183245">+237 659 18 32 45</a></div>
+                    </div>
+                  </div>
+
+                  <div class="contact-row" style="margin-top:10px">
+                    <div class="icon">✉️</div>
+                    <div>
+                      <div class="small-muted">Email</div>
+                      <div style="font-weight:700"><a href="mailto:mekebernardjunior932@gmail.com">mekebernardjunior932@gmail.com</a></div>
+                    </div>
+                  </div>
+
+                  <div class="contact-row" style="margin-top:10px">
+                    <div class="icon">📍</div>
+                    <div>
+                      <div class="small-muted">Localisation</div>
+                      <div style="font-weight:700">Yaoundé / Douala, Cameroun</div>
+                    </div>
+                  </div>
+
+                  <div style="margin-top:12px" class="small-muted">Réseaux</div>
+                  <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+                    <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="btn" href="#" target="_blank" rel="noopener">WhatsApp</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT: form -->
+            <div>
+              <div class="contact-card" style="padding:16px">
+                <form id="contactForm" novalidate>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+                    <div>
+                      <label for="name" class="small-muted">Nom</label>
+                      <input id="name" name="name" type="text" required placeholder="Votre nom">
+                    </div>
+                    <div>
+                      <label for="email" class="small-muted">Email</label>
+                      <input id="email" name="email" type="email" required placeholder="vous@exemple.com">
+                    </div>
+                  </div>
+
+                  <div style="margin-top:10px">
+                    <label for="subject" class="small-muted">Objet</label>
+                    <input id="subject" name="subject" type="text" placeholder="Ex : Demande de mission / Devis">
+                  </div>
+
+                  <div style="margin-top:10px">
+                    <label for="message" class="small-muted">Message</label>
+                    <textarea id="message" name="message" required placeholder="Votre message..."></textarea>
+                  </div>
+
+                  <!-- honeypot -->
+                  <input id="company" name="company" type="text" autocomplete="off" tabindex="-1" style="position:absolute;left:-9999px;top:auto">
+
+                  <div class="form-actions">
+                    <button class="btn-primary" type="submit">Envoyer</button>
+                    <button type="button" id="callBtn" class="btn">Appeler</button>
+                    <div id="formStatus" class="form-note" aria-live="polite"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> MEKE Bernard Junior — Yaoundé / Douala · <a href="mailto:mekebernardjunior932@gmail.com">mekebernardjunior932@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
